@@ -1,11 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contato — ÓRBITA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="logo">◉ ÓRBITA</a>
+        <button class="hamburguer" id="hamburguer">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="menu" id="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="solucao.html">Solução</a></li>
+            <li><a href="plataforma.html">Plataforma</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contato.html" class="ativo">Contato</a></li>
+            <li><a href="integrantes.html">Equipe</a></li>
+        </ul>
+    </nav>
+
+    <header class="topo-pagina">
+        <div class="container">
+            <h1>Entre em <em>contato</em></h1>
+            <p>Dúvidas sobre o projeto ou quer conversar? Manda uma mensagem.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="secao">
+            <div class="container caixa-form">
+
+                <form id="formContato">
+                    <div class="campo">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
+                        <span class="msg-erro" id="erroNome"></span>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com">
+                        <span class="msg-erro" id="erroEmail"></span>
+                    </div>
+
+                    <div class="campo">
+                        <label for="assunto">Assunto</label>
+                        <select id="assunto" name="assunto">
+                            <option value="">Selecione um assunto</option>
+                            <option value="projeto">Sobre o projeto</option>
+                            <option value="solucao">Sobre a solução</option>
+                            <option value="colaboracao">Colaboração</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                        <span class="msg-erro" id="erroAssunto"></span>
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui..."></textarea>
+                        <span class="msg-erro" id="erroMensagem"></span>
+                    </div>
+
+                    <button type="submit" class="btn">Enviar Mensagem</button>
+                </form>
+
+                <div id="confirmado" class="confirmado">
+                    <p>✅</p>
+                    <h3>Mensagem enviada!</h3>
+                    <p>Obrigado pelo contato. Responderei em breve.</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="solucao.html">Solução</a>
+                <a href="plataforma.html">Plataforma</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="faq.html">FAQ</a>
+                <a href="contato.html">Contato</a>
+                <a href="integrantes.html">Equipe</a>
+            </nav>
+            <p>© 2026 ÓRBITA — FIAP Global Solution · Giovanni Lima · RM 556536</p>
+        </div>
+    </footer>
+
+    <script src="js/principal.js" defer></script>
+    <script src="js/formulario.js" defer></script>
 </body>
 </html>
