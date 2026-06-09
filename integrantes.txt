@@ -1,0 +1,11 @@
+GLOBAL SOLUTION 2026 — FIAP
+Projeto: ÓRBITA — Economia Espacial Inteligente
+Disciplina: Front-End Design Engineering
+
+INTEGRANTE:
+
+Nome: Giovanni de Souza Lima
+RM: 556536
+Turma: 1TDSPI-2026
+GitHub: https://github.com/GiovanniSouzaL
+LinkedIn: https://www.linkedin.com/in/giovanni-de-souza-lima-2770943b5/
