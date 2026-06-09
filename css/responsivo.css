@@ -1,0 +1,79 @@
+/* tablet - reorganiza o que estava em 4 colunas */
+@media (max-width: 991px) {
+    .navbar { padding: 16px 24px; }
+    .cards { grid-template-columns: repeat(2, 1fr); }
+    .sobre-grid,
+    .dois-lados { grid-template-columns: 1fr; gap: 36px; }
+    .ods-lista { grid-template-columns: 1fr; max-width: 400px; }
+}
+
+/* celular - hambúrguer aparece e menu some */
+@media (max-width: 600px) {
+    .hamburguer { display: flex; }
+
+    .menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        max-width: 260px;
+        height: 100vh;
+        background: var(--fundo2);
+        border-left: 1px solid var(--borda);
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px 28px;
+        gap: 4px;
+        z-index: 110;
+    }
+
+    .menu.aberto { display: flex; }
+
+    .menu a {
+        font-size: 1rem;
+        padding: 12px 8px;
+        border-bottom: 1px solid var(--borda);
+        border-radius: 0;
+        width: 100%;
+    }
+
+    /* overlay fica abaixo do menu mas em cima do conteúdo da página */
+    #overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 90;
+    }
+
+    #overlay.visivel { display: block; }
+
+    .hero { padding: 100px 0 60px; }
+    .hero h1 { font-size: 2.2rem; }
+    .hero-botoes { flex-direction: column; align-items: center; }
+
+    .cards { grid-template-columns: 1fr; }
+    .secao { padding: 56px 0; }
+    .titulo { margin-bottom: 36px; }
+
+    .perfil {
+        flex-direction: column;
+        text-align: center;
+        padding: 28px 20px;
+    }
+
+    .perfil-links { justify-content: center; }
+    .cta-box { padding: 40px 24px; }
+
+    .nav-abas { gap: 6px; }
+    .btn-aba { font-size: 0.76rem; padding: 8px 12px; }
+
+    .topo-pagina { padding: 100px 0 50px; }
+}
+
+/* desktop - garante que o menu aparece normalmente */
+@media (min-width: 601px) {
+    .menu { display: flex; }
+    .hamburguer { display: none; }
+}
